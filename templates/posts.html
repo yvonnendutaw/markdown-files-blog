@@ -1,7 +1,20 @@
-{% for post in posts %}
-<a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
-        {{ post.html|safe }}
-		{{ post.title }}
-		{{ post.date }}
-    </a>
-<small>{{ post.date }}</small> {% endfor %}
+<DOCTYPE !>
+	<html>
+
+	<head>
+		<meta charset="utf-8" lang="en">
+		<title>
+			Markdownblog
+		</title>
+	</head>
+
+	<body>
+
+		<h1>Hello there, This is my blog here.</h1> {% for post in posts %}
+		<a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
+			{{ post.title }}
+			</a>
+		<small>{{ post.date }}</small> {% endfor %}
+	</body>
+
+	</html>

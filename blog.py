@@ -26,7 +26,7 @@ def posts():
 def post(name):
     path = '{}/{}'.format(POST_DIR, name)
     post = flatpages.get_or_404(path)
-    return render_template('posts.html', post=post)
+    return render_template('post.html', post=post)
 
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "build":
