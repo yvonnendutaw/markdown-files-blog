@@ -1,20 +1,9 @@
-<DOCTYPE !>
-	<html>
+{% extends 'index.html' %} {% block content %} {% for post in posts %}
 
-	<head>
-		<meta charset="utf-8" lang="en">
-		<title>
-			Markdownblog
-		</title>
-	</head>
 
-	<body>
-
-		<h1>Hello there, This is my blog here.</h1> {% for post in posts %}
-		<a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
+<a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
 			{{ post.title }}
 			</a>
-		<small>{{ post.date }}</small> {% endfor %}
-	</body>
-
-	</html>
+<br>
+<small>{{ post.date }}</small>
+<br>{% endfor %} {% endblock%}

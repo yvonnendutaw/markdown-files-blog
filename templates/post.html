@@ -1,3 +1,1 @@
-{{ post.html|safe }}
-{{ post.title }}
-{{ post.date }}
+{% extends 'index.html' %} {% block content %} {{ post.html|safe }} {{ post.title }} {{ post.date }}{%endblock%}

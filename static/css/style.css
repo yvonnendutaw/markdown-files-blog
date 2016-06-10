@@ -1,0 +1,289 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600);
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: auto;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#crouton ul {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	list-style: none;
+}
+
+#crouton li {
+	float: left;
+	margin: 0 10px;
+}
+
+#crouton a {
+	background: #ddd;
+	padding: .7em 1em;
+	float: left;
+	text-decoration: none;
+	color: #444;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	position: relative;
+}
+
+#crouton li:first-child a {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+#crouton li:last-child a {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+#crouton a:hover {
+	background: #99db76;
+}
+
+#crouton li:not(:first-child) > a::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -1.5em;
+	border-width: 1.5em 0 1.5em 1em;
+	border-style: solid;
+	border-color: #ddd #ddd #ddd transparent;
+	left: -1em;
+}
+
+#crouton li:not(:first-child) > a:hover::before {
+	border-color: #99db76 #99db76 #99db76 transparent;
+}
+
+#crouton li:not(:last-child) > a::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	margin-top: -1.5em;
+	border-top: 1.5em solid transparent;
+	border-bottom: 1.5em solid transparent;
+	border-left: 1em solid #ddd;
+	right: -1em;
+}
+
+#crouton li:not(:last-child) > a:hover::after {
+	border-left-color: #99db76;
+}
+
+div.wrapper {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	background-color: #eee;
+}
+
+div.top-navbar {
+	padding: 20px 0;
+	width: 100%;
+	background-color: #39bb58;
+}
+
+div.content h1 {
+	font-size: 35px;
+	font-weight: 100;
+	margin: 5px 0 15px;
+}
+
+div.content p {
+	color: #888;
+	font-size: 18px;
+	margin: 10px auto;
+	width: 90%;
+	text-align: left;
+	line-height: 22.5px;
+}
+
+div.content {
+	position: absolute;
+	height: auto;
+	width: 50%;
+	top: 30px;
+	left: 0;
+	right: 0;
+	padding: 25px;
+	padding-bottom: 70px;
+	margin: 15px auto;
+	color: #555;
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 1);
+	z-index: 20;
+	font-family: Source Sans Pro;
+	perspective: 400px;
+	transform: perspective(400px);
+	transition: 1s ease;
+}
+
+div.content:before {
+	position: absolute;
+	height: 100%;
+	width: 30px;
+	top: -2%;
+	left: -30px;
+	content: " ";
+	display: block;
+	/* z-index: 200; */
+	background: url("http://al2015.gatesnotesazure.com/assets/media/images/top-shadow-left.png") no-repeat;
+}
+
+div.content:after {
+	position: absolute;
+	height: 100%;
+	width: 30px;
+	top: -2%;
+	right: -30px;
+	content: " ";
+	/* z-index: 200; */
+	background: url("http://al2015.gatesnotesazure.com/assets/media/images/top-shadow-right.png") no-repeat;
+}
+
+div.share-widget {
+	position: absolute;
+	left: 10px;
+	bottom: -10px;
+	padding: 7px;
+	font-size: 18px;
+	font-family: Lato;
+	color: #555;
+	background-color: rgba(0, 0, 0, 0.02);
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.03);
+	border-radius: 2.5px;
+	transform: perspective(400px) rotateX(90deg);
+	transition: 0.5s ease;
+	opacity: 0;
+}
+
+div.share-widget span.fa {
+	height: 35px;
+	width: 35px;
+	text-align: center;
+	line-height: 35px;
+	color: #555;
+	background-color: #39bb58;
+	font-size: 20px;
+	transition: 0.2s ease-in;
+	cursor: pointer;
+}
+
+div.share-widget span.fa:hover {
+	color: #222;
+	background-color: #38cb58;
+}
+
+div.content:hover div.share-widget {
+	transform: rotateX(0deg) translateY(-20px);
+	-moz-transform: rotateX(0deg) translateY(-20px);
+	opacity: 1;
+}
+
+div.band {
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.05);
+	background-image: radial-gradient(circle, rgba(0, 0, 0, 0.19), rgba(255, 255, 255, 0.3));
+	box-shadow: 0 1px #ddd;
+}
+
+div.footer {
+	padding: 10px;
+	width: 100%;
+	color: #fff;
+	background-color: #39bb58;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	font-family: Lato;
+}
+
+div.footer a {
+	color: white;
+	text-decoration: none;
+	transition: 0.5s ease;
+}
+
+div.footer a:hover {
+	color: #333;
+}
+
+
+/* #Media Queries
+=============================*/
+
+@media only screen and (min-width: 768px) {
+	div.content {
+		width: 500px;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	div.top-navbar {
+		padding: 10px;
+	}
+	div.band {
+		height: 10px;
+		background-image: none;
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+	span.fa-bars {
+		padding: 5px;
+		margin-left: 0;
+		box-shadow: none;
+	}
+	div.content {
+		top: 80px;
+		width: 80%;
+		padding: 19px;
+		padding-bottom: 60px;
+	}
+	div.content p {
+		width: 100%;
+	}
+	div.share-widget {
+		margin: auto;
+		left: 0;
+		right: 0;
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 768px) div.content {
+	width: 70%;
+}
+
+div.content {
+	position: absolute;
+	height: auto;
+	width: 70%;
+	top: 50px;
+	left: 0;
+	right: 0;
+	padding: 25px;
+	padding-bottom: 70px;
+	margin: 15px auto;
+	color: #555;
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 1);
+	z-index: 20;
+	font-family: Source Sans Pro;
+	perspective: 400px;
+	transform: perspective(400px);
+	transition: 1s ease;
+}

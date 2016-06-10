@@ -1,19 +1,24 @@
 # second Markdown blog 
-title: Or bitbucket
-date: 2016-05-20
+title: FIBONACCI
+date: 2016-05-29
 
-American-style dates, I know, I know. Here you can write markdown code, including *italics* and **bold**
+# **Famous Fibonacci**
 
-You can have:
-* Lists
-* More Lists
+There are anumber of ways to implement the fibonacci sequence in python.
 
-> And block quotes
+I'll however look at three today. 
 
-    And event highlighted code if you indent :)
-jknsdjncjwhdvnw;
-kwdncuiwjkv
-dvkojbwhibvkl'kjkn;qjjknq'
-cdjnv;wdjvjkwn
-'djbvn;dvnjkq'djhbv;wjvl'[vjjknv;kwbjvbkl
-jvjknw';kwjvkoqoiwhlskcnenk]
+Using looping technique
+
+	def fib(n):
+	 a,b = 1,1
+	 for i in range(n-1):
+	  a,b = b,a+b
+	 return a
+	print fib(5)
+	
+Well I hope you found this helpful .
+
+See you in the next post!
+
+

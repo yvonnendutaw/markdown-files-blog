@@ -1,13 +1,26 @@
 # First Markdown blog 
-title: Should it be guthub
-date: 2016-01-24
+title: FIZZBUZZ
+date: 2016-05-26
 
-American-style dates, I know, I know. Here you can write markdown code, including *italics* and **bold**
+# **FIZZBUZZ in python**
 
-You can have:
-* Lists
-* More Lists
+Here's how the fizzbuzz code is written python:
 
-> And block quotes
 
-    And event highlighted code if you indent :)
+My solution involved using a for loop.
+
+	for num in xrange(1,101):
+		if num % 5 == 0 and num % 3 == 0:
+			print "FizzBuzz"
+		elif num % 3 == 0:
+			print "Fizz"
+		elif num % 5 == 0:
+			print "Buzz"
+		else:
+
+Well I hope you found this helpful .
+
+See you in the next post!
+
+
+
