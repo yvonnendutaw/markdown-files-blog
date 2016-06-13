@@ -1,5 +1,6 @@
 # First Markdown blog 
-title: FIZZBUZZ
+title: Hacking the Fizzbuzz!
+description: The "Fizz-Buzz test" is an interview question designed to help filter out the 99.5% of programming job candidates who can't seem to program their way out of a wet paper bag
 date: 2016-05-26
 
 # **FIZZBUZZ in python**

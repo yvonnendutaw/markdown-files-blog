@@ -6,7 +6,13 @@ body {
 }
 
 body {
-	height: auto;
+	height: 100vh;
+	background-image: url(https://images.unsplash.com/photo-1447078806655-40579c2520d6?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=115bd31c17ba7ce5eb2b7d9f50b545cb);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	margin: 0em;
+	padding: 0em;
 }
 
 *,
@@ -86,7 +92,7 @@ body {
 
 div.wrapper {
 	position: relative;
-	height: 100%;
+	height: auto;
 	width: 100%;
 	background-color: #eee;
 }
@@ -112,11 +118,15 @@ div.content p {
 	line-height: 22.5px;
 }
 
+div.content .bottom {
+	margin-bottom: 90px;
+}
+
 div.content {
 	position: absolute;
 	height: auto;
 	width: 50%;
-	top: 30px;
+	top: 10px;
 	left: 0;
 	right: 0;
 	padding: 25px;
@@ -134,7 +144,7 @@ div.content {
 
 div.content:before {
 	position: absolute;
-	height: 100%;
+	height: auto;
 	width: 30px;
 	top: -2%;
 	left: -30px;
@@ -146,7 +156,7 @@ div.content:before {
 
 div.content:after {
 	position: absolute;
-	height: 100%;
+	height: auto;
 	width: 30px;
 	top: -2%;
 	right: -30px;
@@ -171,22 +181,6 @@ div.share-widget {
 	opacity: 0;
 }
 
-div.share-widget span.fa {
-	height: 35px;
-	width: 35px;
-	text-align: center;
-	line-height: 35px;
-	color: #555;
-	background-color: #39bb58;
-	font-size: 20px;
-	transition: 0.2s ease-in;
-	cursor: pointer;
-}
-
-div.share-widget span.fa:hover {
-	color: #222;
-	background-color: #38cb58;
-}
 
 div.content:hover div.share-widget {
 	transform: rotateX(0deg) translateY(-20px);
@@ -207,7 +201,7 @@ div.footer {
 	width: 100%;
 	color: #fff;
 	background-color: #39bb58;
-	position: absolute;
+/*	position: absolute;*/
 	bottom: 0;
 	text-align: center;
 	font-family: Lato;

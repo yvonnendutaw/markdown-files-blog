@@ -1,10 +1,11 @@
 # second Markdown blog 
 title: FIBONACCI
+description: The Fibonacci Sequence is the series of numbers.The next number is found by adding up the two numbers before it. Lorem ipsum jkjds jhdjhf hjdsj ihudaw iuids segfise ojdsouf ihdfisi.
 date: 2016-05-29
 
 # **Famous Fibonacci**
 
-There are anumber of ways to implement the fibonacci sequence in python.
+There are a number of ways to implement the fibonacci sequence in python.
 
 I'll however look at three today. 
 

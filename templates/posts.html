@@ -1,9 +1,18 @@
-{% extends 'index.html' %} {% block content %} {% for post in posts %}
+{% extends 'index.html' %}
+	{% block content %}
+		{% for post in posts %}
 
+			<a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
+				{{ post.title }}
+			</a> ,
+			<small>{{ post.date }}</small>
+			<p>
+				{{ post.description }}
+			</p>
+			<br>
 
-<a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
-			{{ post.title }}
-			</a>
-<br>
-<small>{{ post.date }}</small>
-<br>{% endfor %} {% endblock%}
+				<hr/>
+			<br>
+			<br>
+		{% endfor %}
+	{% endblock%}
