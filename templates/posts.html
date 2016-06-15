@@ -1,7 +1,6 @@
 {% extends 'index.html' %}
 	{% block content %}
 		{% for post in posts %}
-
 			<a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
 				{{ post.title }}
 			</a> ,
@@ -10,7 +9,6 @@
 				{{ post.description }}
 			</p>
 			<br>
-
 				<hr/>
 			<br>
 			<br>
