@@ -1,1 +1,1 @@
-web: python blog.py
+web:
