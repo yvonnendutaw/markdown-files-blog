@@ -1,13 +1,16 @@
 {% extends 'index.html' %}
 	{% block content %}
 		{% for post in posts %}
-			<a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
-				{{ post.title }}
-			</a> ,
-			<small>{{ post.date }}</small>
+		<h1>
+			{{ post.title }}
+		</h1>			<small>{{ post.date }}</small>
 			<p>
 				{{ post.description }}
 			</p>
+
+				<a class="readmore" href="{{ url_for('post', name=post.path.replace('posts/', '')) }}">
+				Read More
+			</a>
 			<br>
 				<hr/>
 			<br>

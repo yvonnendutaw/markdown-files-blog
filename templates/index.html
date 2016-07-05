@@ -2,13 +2,12 @@
 <html>
 
 <head>
-	{% block head %}
 	<title>{% block title %}Markdownblog{% endblock %}</title>
-	{% endblock %}
 
-	<link rel="stylesheet" href="/static/css/style.css">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css">
+	<link rel="stylesheet" href="/static/css/app.css">
 
 </head>
 
@@ -30,50 +29,26 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 </script>
-	<div class="content">
-	<div class="wrapper">
-		<div class="top-navbar">
-<!--
-			<div id="crouton">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Login</a></li>
-					<li><a href="#">Posts</a></li>
-					<li><a href="#">Comment</a></li>
-				</ul>
-			</div>
--->
-		</div>
-	</div>
-
-	<div class="band"></div>
+	 <div class="wrap">
+    <div class="nav">
+     <a class="logo" href="#"><img src="http://mantillasyvelosdenovia.com/wp-content/uploads/2016/03/blog.png" alt="The Blog"/></a>
+		 </div>
 
 
-		<h1>yvonne's blog</h1>
+ <div class ="row small-10 columns">
+ <div class=" hello small-4 columns">
+ </div>
 
-		<hr>
-		<div class="container">
-			<div class="header">
-				<h3 class="text-muted">Upload blog post</h3>
-			</div>
 
-			<div>
-
-				<form action="upload" method="post" enctype="multipart/form-data">
-					<input type="file" name="file">
-					<br />
-					<br />
-					<input type="submit" value="Upload">
-				</form>
-
-			</div>
-		</div>
-
-		<div class="info">
-
-			<div id="content"><hr>{% block content %}{% endblock %}</div>
+		<div class="posts">
+        <div class="post">
+            <div class="section"><hr>{% block content %}{% endblock %}</div>
 
 		</div>
+	 </div>
+	 <div class="upload small-4 columns">
+		<a href="{{ url_for('uploadd')}}" class="button"> Create Post</a>
+	 </div>
 
 		<div class="footer">
 			<a href="http://github.com/designviacode" target="_blank">
@@ -87,6 +62,8 @@
 		</div>
 
 	</div>
+		 </div>
+
 <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 <script>
   // Initialize Firebase

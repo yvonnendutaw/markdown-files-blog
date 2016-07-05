@@ -30,6 +30,11 @@ def posts():
     return render_template('posts.html', posts=posts)
 
 
+@app.route('/uploadd')
+def uploadd():
+	return render_template ('upload.html')
+
+
 @app.route('/posts/<name>/')
 def post(name):
     path = '{}/{}'.format(POST_DIR, name)
