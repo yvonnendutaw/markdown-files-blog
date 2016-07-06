@@ -505,7 +505,7 @@ body {
 }
 
 .nav {
-  background: #F4821C;
+  background: #702632;
   border-bottom: 1px solid #EFEFEF;
   height: 100px;
 }
@@ -555,7 +555,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-weight: 400;
-  color: #423B35;
+  color: #331832;
   text-align: left;
   font-size: 36px;
 }
@@ -632,12 +632,18 @@ body {
 	float: right;
 }
 .button {
+/*
     margin-top: 7%;
-    width: 80%;
     margin-left: 13%;
+*/
 }
 .hello h1 {
     font-size: 2em;
     margin: 0.67em 0;
     margin-left: 7%;
+}
+
+li a{
+	list-style: none;
+	display: inline-block;
 }

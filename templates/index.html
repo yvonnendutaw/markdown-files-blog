@@ -31,7 +31,14 @@
 </script>
 	 <div class="wrap">
     <div class="nav">
-     <a class="logo" href="#"><img src="http://mantillasyvelosdenovia.com/wp-content/uploads/2016/03/blog.png" alt="The Blog"/></a>
+    <ul>
+    	<li>
+    		<a href=" {{ url_for ('posts')}}">home</a>
+    	</li>
+    	<li>
+    		<a href=" {{ url_for ('posts')}}">create post</a>
+    	</li>
+    </ul>
 		 </div>
 
 
@@ -42,13 +49,13 @@
 
 		<div class="posts">
         <div class="post">
-            <div class="section"><hr>{% block content %}{% endblock %}</div>
+            <div class="section">{% block content %}{% endblock %}  <div class="upload small-4 columns">
+		<a href="{{ url_for('uploadd')}}" class="button"> Create Post</a>
+	 </div> </div>
 
 		</div>
 	 </div>
-	 <div class="upload small-4 columns">
-		<a href="{{ url_for('uploadd')}}" class="button"> Create Post</a>
-	 </div>
+
 
 		<div class="footer">
 			<a href="http://github.com/designviacode" target="_blank">
