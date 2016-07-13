@@ -1,1 +1,1 @@
-web: gunicorn markdown-files-blog.wsgi --log-file -
+web: gunicorn app:app

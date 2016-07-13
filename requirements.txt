@@ -7,5 +7,8 @@ MarkupSafe==0.18
 PyYAML==3.10
 Pygments==1.6
 Werkzeug==0.9.3
+argparse==1.2.1
+click==6.6
+gunicorn==19.6.0
 itsdangerous==0.22
 wsgiref==0.1.2
