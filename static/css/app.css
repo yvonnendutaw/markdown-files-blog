@@ -2,5 +2,5 @@ body{
 	background-image: url(https://schwannzbea.files.wordpress.com/2010/08/blog-background1.jpeg);
 background-attachment: fixed;
 	height: auto;
-	background-size: contain;
+	background-size: cover;
 }
