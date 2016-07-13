@@ -15,7 +15,7 @@ app = Flask(__name__)
 flatpages = FlatPages(app)
 freezer = Freezer(app)
 app.config.from_object(__name__)
-port = int(os.environ.get('PORT', 5000))
+port = int(os.environ.get('PORT', 80))
 
 
 # This is the path to the upload directory
