@@ -1,34 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+<title>Markdown Files Blog</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
 
-<head>
-	<title>{% block title %}Markdownblog{% endblock %}</title>
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
 
+<!-- Header -->
+<div class="w3-container w3-center w3-padding-32">
+  <h1><b>COD3</b></h1>
+  <p>Welcome to the chamber of code <span class="w3-tag">unknown</span></p>
+</div>
 
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css">
-	<link rel="stylesheet" href="/static/css/app.css">
-
-</head>
 
 <body>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '290085241331302',
-      xfbml      : true,
-      version    : 'v2.6'
-    });
-  };
+<div class="w3-hide-large w3-hide-small w3-margin-top w3-margin-bottom">
+    <div class="w3-container w3-white w3-padding-32">
+    <img src="img_avatar_g.jpg" alt="Me" style="width:150px" class="w3-left w3-round-large w3-margin-right">
+    <span>This is just me exploring the world of code. Every new day I learn something new that I am willing to share to the world. Happy Reading! </span>
+  </div>
+</div>
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
+<!-- About Card on small screens -->
+<div class="w3-hide-large w3-hide-medium w3-margin-top w3-margin-bottom">
+  <img src="img_avatar_g.jpg" style="width:100%" alt="Me">
+  <div class="w3-container w3-white">
+    <h4><b>Yvonne Nduta</b></h4>
+    <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+  </div>
+</div>
+
 	 <div class="wrap">
     <div class="nav">
     <ul>

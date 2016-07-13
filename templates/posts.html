@@ -1,7 +1,9 @@
 {% extends 'index.html' %}
 	{% block content %}
 		{% for post in posts %}
-		<h1>
+		 <div class="w3-card-4 w3-margin w3-white">
+		   <img src="img_woods.jpg" alt="Nature" style="width:100%">
+<h1>
 			{{ post.title }}
 		</h1>			<small>{{ post.date }}</small>
 			<p>
@@ -15,5 +17,6 @@
 				<hr/>
 			<br>
 			<br>
+</div>
 		{% endfor %}
 	{% endblock%}
