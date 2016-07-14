@@ -15,11 +15,16 @@ app = Flask(__name__)
 flatpages = FlatPages(app)
 freezer = Freezer(app)
 app.config.from_object(__name__)
+app.config['DATABASE_URL'] = postgres://yyxbtlnmuwjwfy:XJ9TDUQW7u8qMBdTRuYrhBpKU0@ec2-23-21-179-195.compute-1.amazonaws.com:5432/ddu4ilmm1qhh85
+port = int(os.environ.get('PORT', 80))
+
 
 # This is the path to the upload directory
 app.config['UPLOAD_FOLDER'] = 'content/posts/'
 # These are the extension that we are accepting to be uploaded
 app.config['ALLOWED_EXTENSIONS'] = set(['txt', 'md', 'pdf', 'png', 'jpg', 'jpeg', 'gif'])
+
+
 
 
 @app.route("/")
@@ -89,4 +94,4 @@ if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "build":
         freezer.freeze()
     else:
-        app.run(debug=True)
+        app.run(debug=True, host='0.0.0.0', port=port)
