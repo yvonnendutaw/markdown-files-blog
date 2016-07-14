@@ -15,7 +15,6 @@ app = Flask(__name__)
 flatpages = FlatPages(app)
 freezer = Freezer(app)
 app.config.from_object(__name__)
-app.config['DATABASE_URL'] = postgres://yyxbtlnmuwjwfy:XJ9TDUQW7u8qMBdTRuYrhBpKU0@ec2-23-21-179-195.compute-1.amazonaws.com:5432/ddu4ilmm1qhh85
 port = int(os.environ.get('PORT', 80))
 
 
